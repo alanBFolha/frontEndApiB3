@@ -9,10 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent  {
 
   showTemplate: boolean = false;
-
   public shared: SharedService;
-
-
   title = 'helpdesk';
 
 
@@ -25,5 +22,11 @@ export class AppComponent  {
     this.shared.showTemplate.subscribe(
       show => this.showTemplate = show
     );
+  }
+
+  showContentWrapper () {
+    return  {
+      'content-wrapper' : this.shared.isLoggedIn()
+    }
   }
 }
