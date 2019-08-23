@@ -20,7 +20,7 @@ export class UserService {
       return this.http.put(`${HELP_DESK_API}/api/user`,user);
     }else {
       user.id = null;
-      return this.http.post(`${HELP_DESK_API}/api/user`,user);
+      return this.http.post(`/api/user`,user);
     }
   }
 
