@@ -44,9 +44,10 @@ export class UserNewComponent implements OnInit {
       this.user.password = '';
 
     }, err => {
+      debugger
       this.showMessage({
         type: 'error',
-        text: err ['error'] ['errors'] [10]
+        text: err ['error'] ['erros']
       });
     });
   } 

@@ -4,7 +4,6 @@ export class Ticket {
     constructor(
         public id: string,
         public number: number,
-        public titulo: string,
         public title: string,
         public status: string,
         public priority: string,
